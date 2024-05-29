@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poème</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(poeme.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 20px; /* Adjust padding as needed */
+            box-sizing: border-box;
+        }
+
+        .left-list, .right-list, .center-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .left-list li, .right-list li, .center-list li {
+            margin: 0 10px; /* Adjust the margin as needed */
+        }
+
+        .right-list li a{
+            color: black;
+            text-decoration: none;
+            font-size: 30px;
+        }
+        .center-container {
+            text-align: center;
+            margin-top: 20px; /* Adjust margin as needed */
+        }
+
+        .center-list {
+            justify-content: center;
+            margin-top: 10px; /* Adjust margin as needed */
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 50px;
+        }
+
+        .left-td {
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .right-td {
+            margin-left: -880px;
+        }
+
+        /* Styles for the category border */
+        .category-border {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #fff; /* Adjust as needed */
+            border: 1px solid black; /* Adjust border properties as needed */
+            padding: 10px; /* Adjust padding as needed */
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="left-list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+        <ul class="right-list">
+            <li><a href="#accueil"><ion-icon name="star-outline" style="font-size: 30px;"></ion-icon></a></li>
+            <li><a href="#accueil" onmouseover="showCategories()" onmouseout="hideCategories()">Catégorie</a></li>
+            <li><a href="#accueil"><ion-icon name="search-outline" style="font-size: 30px;"></ion-icon></a></li>
+
+        </ul>
+    </div>
+    <div class="center-container">
+        <h1>Poème</h1>
+        <ul class="center-list">
+            <li>Amour</li>
+            <li>Acrostiche</li>
+            <li>Humoristique</li>
+            <li>Vie</li>
+        </ul>
+    </div>
+    <table>
+        <tr>
+            <td class="left-td">
+                <h2 id="text">L'Éveil des Étoiles</h2>
+                <p id="text"><a href="poeme_Mylife.html">Dans l'arène du destin..</a></p>
+                <h2 id="text">Voyage aux Âmes Perdues</h2>
+                <p id="text"><a href="poeme2.html">Dans le labyrinthe des distances...</a></p>
+                <h2 id="text">Le Jardin des Souvenirs</h2>
+                <p id="text"><a href="poeme3.html">Dans le jardin des souvenirs, où .....</a></p>
+                <h2 id="text">L'Écho du Phénix</h2>
+                <p id="text"><a href="poeme4.html">Dans l'arène du destin..</a></p>
+                <h2 id="text">Le Souffle de l'Aube</h2>
+                <p id="text"><a href="">L'aube se lève doucement, baignant le monde dans une lumière rose et dorée</a></p>
+                <h2 id="text">Les Murmures de la Mer</h2>
+                <p id="text"><a href="">La mer, vaste et mystérieuse, nous appelle à....</a></p>
+            </td>
+            <td>
+                <!-- Category border container -->
+                <div class="category-border" id="category-border">
+                    <!-- Place your categories here -->
+                    <ul>
+                        <li>Nature<br>inspirés par la nature, ses paysages, sa beauté, ses saisons, <br>ses éléments tels que le soleil, la lune, les étoiles, etc</li><br><br>
+                        <li>Vie et mort</li><br><br>
+                        <li>Spiritualité</li><br><br>
+                        <li>Histoire et mémoire</li><br><br>
+                        <li>Société et politique</li><br><br>
+                        <li>Identité et culture</li><br><br>
+                        <li>Art et créativité</li><br><br>
+                        <li>Voyage</li><br><br>
+                        <li>Beauté et esthétique</li><br><br>
+                        <li>Amour</li><br><br>
+                        <!-- Add more categories as needed -->
+                    </ul>
+                </div>
+            </td>
+            <td>
+                <br>
+            </td>
+            <td>
+                <br>
+            </td>
+            <td>
+                <br>
+            </td>
+            <td>
+                <br>
+            </td>
+            <td>
+                <br>
+            </td>
+            <td>
+                <br>
+            </td>
+            <td>
+                <br>
+            </td>
+            <td class="right-td">
+                <h2 id="text">Les Échos d'un jardin secret</h2>
+                <p id="text"><a href="https://www.youtube.com/watch?v=Iwnu6TTMLlM&list=PLwLsbqvBlImHG5yeUCXJ1aqNMgUKi1NK3&index=54">Les échos du passé résonnent à...</a></p>
+                <h2 id="text">Les Promesses du Crépuscule</h2>
+                <p id="text"><a href="https://www.youtube.com/watch?v=Iwnu6TTMLlM&list=PLwLsbqvBlImHG5yeUCXJ1aqNMgUKi1NK3&index=54">À l'heure du crépuscule, le ciel..</a></p>
+                <h2 id="text">L'Envol des Papillons</h2>
+                <p id="text"><a href="https://www.youtube.com/watch?v=Iwnu6TTMLlM&list=PLwLsbqvBlImHG5yeUCXJ1aqNMgUKi1NK3&index=54">Les papillons dansent...</a></p>
+                <h2 id="text">Le Murmure des Feuilles</h2>
+                <p id="text"><a href="https://www.youtube.com/watch?v=Iwnu6TTMLlM&list=PLwLsbqvBlImHG5yeUCXJ1aqNMgUKi1NK3&index=54">Ce langage secret de la nature...</a></p>
+                <h2 id="text">Le Souffle des Souvenirs</h2>
+                <p id="text"><a href="https://www.youtube.com/watch?v=Iwnu6TTMLlM&list=PLwLsbqvBlImHG5yeUCXJ1aqNMgUKi1NK3&index=54">Le vent porte avec lui les murmures du passé..</a></p>
+                <h2 id="text">Les Fragments de Cœur</h2>
+                <p id="text"><a href="https://www.youtube.com/watch?v=Iwnu6TTMLlM&list=PLwLsbqvBlImHG5yeUCXJ1aqNMgUKi1NK3&index=54">Chaque éclat raconte une histoire de douleur et de rupture</a></p>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        // Function to show categories border
+        function showCategories() {
+            document.getElementById('category-border').style.display = 'block';
+        }
+
+        // Function to hide categories border
+        function hideCategories() {
+            document.getElementById('category-border').style.display = 'none';
+        }
+    </script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
