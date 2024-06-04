@@ -257,6 +257,34 @@
             margin-top: 50px;
             margin-left: 50px;
         }
+        .imge {
+  transform: translateX(100%);
+  animation: slideImage 1s forwards;
+}
+
+.bottom {
+  transform: translateX(-100%);
+  animation: slideText 1s forwards;
+}
+
+@keyframes slideImage {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideText {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 
         
     </style>
